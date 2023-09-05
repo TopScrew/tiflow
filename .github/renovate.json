@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "labels": ["dependencies"],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+ "packageRules": [
+    {
+      "enabled": false,
+      "groupName": "everything",
+      "matchPackagePatterns": ["*"]
+    }
+  ],
+  "baseBranches": ["master", "/^release\\/.*/","fix-ui-not-work","feat/slowquery_v2"]
+}
